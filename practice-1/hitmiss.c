@@ -25,8 +25,8 @@ int main () {
 			squSizeSum += hitNum / points[i];
 		}
 		printf("point_num = %d\n", points[i]);
-		printf("size_average = %f\n", squSizeSum / seedsLen);
-		printf("pi_per_average = %f\n\n", (pi -squSizeSum / seedsLen) / pi);
+		printf("size_average = %f\n", squSizeSum / seedsLen * 4.0);
+		printf("pi_error = %f\n\n", (pi -squSizeSum / seedsLen * 4.0) / pi);
 	}
 
 	return 0;
