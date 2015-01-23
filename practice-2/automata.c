@@ -88,12 +88,7 @@ void automate(int *line){
 
 void printLine(int line[]){
 	for (int i = 0; i < 20; i++){
-		//printf("%d ", line[i]);
-		if(line[i] == 1){
-			printf("* ");
-		}else{
-			printf("- ");
-		} 
+		printf("%2d", line[i]);
 	}
 }
 
@@ -117,6 +112,7 @@ int main(){
 	
 	
 	for (int i = 0; i < 3; i++){
+		printf("Density is %3.2f\n", (double)(density[i] / 20.0));
 		initLine(line, indexes, density[i]);
 		printLines(line);
 	}
